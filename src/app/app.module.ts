@@ -45,8 +45,6 @@ import { CollectionShowCardComponent } from './components/collection-show-card/c
     CollectionShowCardComponent,
   ],
   imports: [
-    AngularFireModule.initializeApp(firebaseConfig),
-    AngularFirestoreModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,

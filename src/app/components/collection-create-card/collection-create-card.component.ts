@@ -32,7 +32,7 @@ export class CollectionCreateCardComponent implements OnInit {
     }
     
     delete(): void {
-	this.onDelete.emit(this.id);
+	    this.onDelete.emit(this.id);
     }
 
 }

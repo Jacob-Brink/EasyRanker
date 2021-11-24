@@ -2,8 +2,15 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FirestoreItem, RankerServiceService } from 'src/app/ranker-service.service';
-import { ItemCardComponent } from '../item-card/item-card.component';
+import { ItemCardComponent } from 'src/app/components/item-card/item-card.component';
 // import { item } from "../QuizPageComponent";
+var BinaryTree = require('btree-js');
+var Tree = BinaryTree.Tree;
+var Node = BinaryTree.Node;
+ 
+var tree = new Tree();
+tree.insert(new Node({ key: 10, text: 'blah' }));  // becomes tree's root
+tree.insert(new Node({ key: 15, text: 'plop' }));
 
 @Component({
   selector: 'app-quiz-page',
@@ -122,6 +129,7 @@ export class QuizPageComponent implements OnInit {
 
   // This refreshes the whole ranked/data stuff
   ngOnInit(): void {
+    console.log(tree);
     this.route.queryParams.subscribe(params => {
       const collectionID = params['collectionid'];
       if (collectionID) {

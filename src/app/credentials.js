@@ -7,3 +7,4 @@ export const firebaseConfig = {
     messagingSenderId: "230960364338",
     appId: "1:230960364338:web:63a8ef66995ada1e5af52b"
   };
+// Import the functions you need from the SDKs you need
