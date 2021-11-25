@@ -10,7 +10,7 @@
   "files": [
     "src/main.ts",
     "src/polyfills.ts",
-    "src/app/components/quiz-page/quiz-page.component.ts"
+    "src/app/pages/quiz-page/quiz-page.component.ts"
 
   ],
   "include": [
